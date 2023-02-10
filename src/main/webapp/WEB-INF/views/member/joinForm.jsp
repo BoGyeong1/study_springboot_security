@@ -23,7 +23,7 @@
   <body>
     <div class="container">
       <form class="form-signin" method="post" action="/joinProc">
-        <h2 class="form-signin-heading">We Made Please sign in</h2>
+        <h2 class="form-signin-heading">Join Form</h2>
         <p>
           <label for="username" class="sr-only">Username</label>
           <input
@@ -34,6 +34,7 @@
             placeholder="Username"
             required=""
             autofocus=""
+            value="test_01"
           />
         </p>
         <p>
@@ -45,6 +46,32 @@
             class="form-control"
             placeholder="Password"
             required=""
+            value="1234"
+          />
+        </p>
+                <p>
+          <label for="NAME" class="sr-only">NAME</label>
+          <input
+            type="NAME"
+            id="NAME"
+            name="NAME"
+            class="form-control"
+            placeholder="NAME"
+            required=""
+            value="test_first"
+          />
+        </p>
+
+                <p>
+          <label for="phone" class="sr-only">phone</label>
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            class="form-control"
+            placeholder="phone"
+            required=""
+            value="010-1234-5678"
           />
         </p>
 
