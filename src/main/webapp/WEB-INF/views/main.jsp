@@ -27,7 +27,7 @@
     <%-- 로그인이 된 상태 --%>
     <sec:authorize access="isAuthenticated()">
       <div>
-       ${userDetailsBean.username}, <a href="/logoutForm">Logout Form</a>
+       ${userDetailsBean.username}, Name : ${userDetailsBean.memberName} <a href="/logoutForm">Logout Form</a>
       </div>
       </sec:authorize>
 

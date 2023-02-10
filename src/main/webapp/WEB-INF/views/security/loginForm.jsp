@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,6 +24,10 @@
   </head>
   <body>
     <div class="container">
+    <c:if test="${not empty param.fail}">
+            <div style="color:red"> Login Fail !            </div>
+            <br />
+    </c:if>
       <form class="form-signin" method="post" action="/login">
         <h2 class="form-signin-heading">We Made Please sign in</h2>
         <p>
@@ -34,6 +40,7 @@
             placeholder="Username"
             required=""
             autofocus=""
+            value="test_01"
           />
         </p>
         <p>
@@ -45,6 +52,8 @@
             class="form-control"
             placeholder="Password"
             required=""
+            value="1234"
+            
           />
         </p>
 
